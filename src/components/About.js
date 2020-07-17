@@ -1,0 +1,51 @@
+import React from "react";
+
+export default function About(){
+    return(
+        <section className="about" id="about">
+            <h2 className="about-title">ABOUT</h2>
+            <div className="about-cards">
+                <div className="about-card">
+                    <h3 className=" about-subtitle">Developer Based in Cape Town</h3>
+                    <div className="about-intro">
+                        <p>
+                            I’ve always sought out opportunities and challenges that are
+                            meaningful to me. Although my professional path has taken many
+                            twists and turns — from waitering to being promoted as manager
+                            — I've never stopped engaging in learning, empowering myself
+                            and passion to help others and solve problems.
+                        </p>
+                        <p>
+                            As a developer, I enjoy using my attention to detail,
+                            my love for making things, and my mission-driven work
+                            ethic. That's why I’m excited to make a big impact at a high growth company.
+                         </p>
+                        <p>
+                            <strong>Current Focus</strong>:&nbsp;<a aria-label="Navigate to the Inclusive Design Patterns homepage"
+                                href="https://www.smashingmagazine.com/inclusive-design-patterns/">Accessibility</a>&nbsp;//&nbsp;<a
+                                    aria-label="Navigate to the Full Stack React homepage"
+                                    href="https://www.fullstackreact.com/">React</a>&nbsp;//&nbsp;<a
+                                        aria-label='Navigate to the article "Scalable CSS"'
+                                        href="https://mrmrs.github.io/writing/2016/03/24/scalable-css/">Design Systems</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div className="about-card">
+                    <h3 className="education-title ">Education</h3>
+                    <div className="card-content">
+                        <p>
+                            <span className="card-title"><a href="https://www.unisa.ac.za/sites/corporate/default"
+                                className="teal-text hoverline">University of South Africa</a></span>
+                        </p>
+                        <p className="brown-text">Pretoria, GP</p>
+                        <ul>
+                            <li>B.S.C in Computing</li>
+                            <li>In progress</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    );
+};

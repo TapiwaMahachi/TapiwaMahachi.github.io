@@ -20,7 +20,7 @@ class Header extends React.Component{
 
     render(){
         return(
-            <div className="header">
+            <header className="header">
                         <a className="logo"href={this.url}>
                             <span className="logo-btn">DevTapiwa</span>
                         </a>
@@ -38,7 +38,7 @@ class Header extends React.Component{
                             <span  className="hamburger"></span>
                         </button>
         
-            </div>
+            </header>
         )
     }
 }
