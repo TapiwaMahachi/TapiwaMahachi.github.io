@@ -12,6 +12,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   line-height: 1.4;
+  background: #e5e2e2;
 
 }
 
@@ -174,8 +175,13 @@ html{
     flex-direction: row;
   }
 }
-
+.visually-hidden{
+  display: none;
+}
 /*start project card*/
+body i{
+  size: calc(5px + 5vmin);
+}
 
 .projects{
   text-align: center;
@@ -201,10 +207,14 @@ html{
 .project-card,
 .about-card {
   padding: 1em;
-  border: 1px solid  #61dafb;
+  border: 0.5px solid  #8f8f8f;
   border-radius: 2%;
   margin: .2em;
   text-align: left;
+  background: #fff;
+}
+.intro-card{
+  border: 1px solid #61dafb;
 }
 footer{
   text-align: center;

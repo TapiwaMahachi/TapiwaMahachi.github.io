@@ -39,8 +39,12 @@ export default function About(){
                     <div className="card-content">
                         <p className="education-title "><strong>Education</strong></p>
                         <p>
-                            <span className="card-title"><a href="https://www.unisa.ac.za/sites/corporate/default">
-                                University of South Africa</a></span>
+                            <span className="card-title">
+                                <a href="https://www.unisa.ac.za/sites/corporate/default">
+                                    University of South Africa
+                                   <i class="fas fa-university"></i>
+                                </a>
+                            </span>
                         </p>
                         <p className="brown-text">Pretoria, GP</p>
                         <ul>
