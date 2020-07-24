@@ -42,7 +42,7 @@ export default function About(){
                             <span className="card-title">
                                 <a href="https://www.unisa.ac.za/sites/corporate/default">
                                     University of South Africa
-                                   <i class="fas fa-university"></i>
+                                   <i className="fas fa-university"></i>
                                 </a>
                             </span>
                         </p>

@@ -1,4 +1,4 @@
-import React, {useState} from "react"
+import React, { useState }  from "react"
 
 //import Footer from './components/Footer';
 import Header from './components/Header';
@@ -6,15 +6,19 @@ import Project from "./components/Projects";
 import Footer from "./components/Footer";
 import Intro from "./components/Intro";
 import About from "./components/About";
+import ThemeContext from "./ThemeContext";
+
+
+
 
 
 function  App(props){
-  
-  //hook for projects
-  const [projects, setProjects] = useState(props.projects);
 
+  //hook for our theme
+  const [theme, setTheme] = useState('light');
+  
   //project lst
-  const projectList = projects.map(project =>
+  const projectList = props.projects.map(project =>
     <Project
     title={project.title}
     img={project.img}
@@ -27,24 +31,24 @@ function  App(props){
     );
     
     return (
-      <div>
-          <Header/>  
+      
+      <ThemeContext.Provider value={{theme, setTheme}}>
+        <Header />
         <section>
-           <Intro/>
+          <Intro />
         </section>
         <section className="projects" id="projects">
-            <h2 className="projects-title">PROJECTS</h2>
-            <h3 className="projects-subtitle">a selection of a range of projects</h3>
-            <div className="projects-card"> 
-               {projectList}
-            </div>         
-      </section>
-        <About/>   
-        <Footer/>
-      </div>
-      
+          <h2 className="projects-title">PROJECTS</h2>
+          <h3 className="projects-subtitle">a selection of a range of projects</h3>
+          <div className="projects-card">
+            {projectList}
+          </div>
+        </section>
+        <About />
+        <Footer />
+      </ThemeContext.Provider>
+   
     );
-
   
 }
 

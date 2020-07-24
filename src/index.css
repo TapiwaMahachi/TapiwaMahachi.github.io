@@ -3,6 +3,23 @@
 *::after{
   box-sizing: border-box;
 }
+:root{
+  /*font size */
+  --fs-h1: ;
+
+  /*font weight */
+  --fw-reg: 300;
+  --fw-bold: 700;
+
+  /*font- family*/
+  --ff: ;
+ /*colour */
+ --clr-accent: #46b68b;
+ --clr-dark: #313030;
+ --clr-light: #dad6d6;
+
+
+}
 
 body {
   margin: 0;
@@ -17,10 +34,10 @@ body {
 }
 
 header {
-  background-color: #282c34;
+ 
   min-height: 10vh;
   font-size: calc(5px + 2vmin);
-  color: white;
+  color: var(--clr-dark);
   position: -webkit-sticky;
   position: sticky;
   top: 0;
@@ -133,7 +150,7 @@ html{
   }
   
   .nav-link {
-  color: #61dafb;
+  color: inherit;
   text-decoration: none;
   }
   .nav-list{
@@ -144,12 +161,16 @@ html{
  .nav-list li{
    padding: 0 1em;
  }
+ .nav-link:hover{
+   color: var(--clr-accent);
+ }
  .nav-link:hover::after{
    content: '';
    display: block;
    width: 100%;
    height: 2px;
-   background: #61dafb;
+   background: var(--clr-accent);
+   color: var(--clr-accent);
    position: relative;
  }
 
@@ -179,8 +200,9 @@ html{
   display: none;
 }
 /*start project card*/
-body i{
-  size: calc(5px + 5vmin);
+ i{
+ font-size: 1.5em;
+ 
 }
 
 .projects{
@@ -216,21 +238,15 @@ body i{
 .intro-card{
   border: 1px solid #61dafb;
 }
-footer{
-  text-align: center;
-  background: #282c34;
-  color: #61dafb;
-  padding: 1em;;
-}
+
 .social-list{
   display: flex;
   justify-content: center;
   list-style: none;
   padding: 0 1em;
-  color: inherit;
+  
 }
 footer a{
-  color: inherit;
   text-decoration: none;
 }
 .social-list li{

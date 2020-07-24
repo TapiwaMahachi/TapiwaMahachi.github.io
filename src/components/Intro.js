@@ -8,7 +8,7 @@ export default function Intro(){
                     <img className="intro-img" src="./me.png" alt="profile pik"></img>
                     <hr />
                     <h2 className="intro-title">Hi I'm <strong>Tapiwa Mahachi</strong> </h2>
-                    <p className="intro-subtitle">I love coding, collabarating and research</p>
+                    <p className="intro-subtitle">I enjoy working with others, coding , collabarating and research</p>
                 </div>
             </div>
             <div className="intro-card ">
