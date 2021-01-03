@@ -15,9 +15,9 @@ export default function Intro(){
                 <div className="skills">
                     <h2 className="skills-title"> What I Know</h2>
                     <hr />
-                    <p><strong>Front end</strong><br />HTML/CSS,React, Bootstrap, Javascript</p>
-                    <p><strong>Backend</strong><br />Python, Django, SQL and C++</p>
-                    <p><strong>Other</strong><br />Git- version control, Herouku, AWS</p>
+                    <p><strong>Front-end</strong><br />React, MaterialUi, Javascript</p>
+                    <p><strong>Backend</strong><br />Python, Django,SQL,Firebase</p>
+                    <p><strong>Other</strong><br />Git & Github - version control,</p>
                     <p>PS: Learning - Nodejs , MongoDb </p>
                 </div>
             </div>

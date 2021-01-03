@@ -2,13 +2,13 @@ import React from 'react';
 
 export default function Footer() {
 
-    const footerStyle = {   
-            textAlign: "center",
-            background: "#3b5b64",
-            color: "#61dafb",
-            padding: "1em",
+        const footerStyle = {   
+                textAlign: "center",
+                background: "#3b8da3",
+                color: "#dad6d6",
+                padding: "1em",
 
-    }
+        }
     
         return(
             <footer style={footerStyle} >
@@ -30,7 +30,7 @@ export default function Footer() {
                             </a>
                         </li>  
                     </ul>
-                    <p className="copyright">Copyright © 2020 DevTapiwa.</p>                  
+                    <p className="copyright">Copyright © {new Date().getFullYear()} DevTapiwa.</p>                  
             </footer>
         );
  };
