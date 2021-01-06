@@ -3,7 +3,7 @@ import React from "react";
 export default function About(){
     return(
         <section className="about" id="about">
-            <h2 className="about-title">ABOUT</h2>
+            <h2 className="title">ABOUT</h2>
             <div className="about-cards">
                
                 <div className="about-card">
@@ -21,26 +21,21 @@ export default function About(){
                             my love for making things, and my mission-driven work
                             ethic. That's why I’m excited to make a big impact at a high growth company.
                          </p>
-                        <p>
-                            <strong>Current Focus</strong>:&nbsp;<a aria-label="Navigate to the Full Stack React homepage"
-                                    href="https://www.fullstackreact.com/">React</a>&nbsp;//&nbsp;<a
-                                        aria-label='Navigate to the article "Scalable CSS"'
-                                        href="https://mrmrs.github.io/writing/2016/03/24/scalable-css/">Design Systems</a>
-                        </p>
+                        
                     </div>
                 </div>
                 <div className="about-card">
-                    <h2> How i learned</h2> 
+                    <h3> How i learned</h3> 
                     <hr></hr>
                     <p> 
                         <strong>Self taught - </strong>
                         Reverse engeneering , cloning and breaking things apart trying to understand how and why it it works that way
                     </p>
-                    <div className="card-content">
+                    <div className="card__content">
                         <p className="education-title "><strong>Education</strong></p>
                         <p>
                             <span className="card-title">
-                                <a href="https://www.unisa.ac.za/sites/corporate/default">
+                                <a  className="card__link" href="https://www.unisa.ac.za/sites/corporate/default">
                                     University of South Africa
                                    <i className="fas fa-university"></i>
                                 </a>

@@ -15,7 +15,7 @@ export default function Project(props){
              
             <p className="project__link">
                 <a href={props.link}>visit site
-                <i class="fas fa-external-link-alt"></i>
+                <i className="fas fa-external-link-alt"></i>
                 </a>
                 <a href={props.link}>source code <i className="fab fa-github"></i></a>
             </p>

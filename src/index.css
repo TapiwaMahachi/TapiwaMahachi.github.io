@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
 *,
 *::before,
 *::after{
@@ -5,31 +6,42 @@
 }
 :root{
   /*font size */
-  --fs-h1: ;
+  --fs-h1: 2.25rem;
+  --fs-h2: 2rem;
+  --fs-h3: 1.25rem;
+  --fs-body: 1rem;
 
   /*font weight */
   --fw-reg: 300;
   --fw-bold: 700;
 
   /*font- family*/
-  --ff: ;
+  --ff-primary: 'Source Sans Pro', sans-serif;
+  --ff-secondary:'Nanum Gothic Coding', monospace;
+
  /*colour */
  --clr-accent: #3b8da3;
+ --clr-accent-light: #9ad5e6;
  --clr-dark: #313030;
  --clr-light: #dad6d6;
 
 
 }
-
+@media(min-width: 800px){
+  :root{
+    --fs-h1: 3rem;
+    --fs-h2: 2.75rem;
+    --fs-h3: 1.25rem;
+    --fs-body: 1.125rem;
+  }
+}
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: var(--ff-primary);
+  font-size: var(--fs-body);
   line-height: 1.4;
-  background: #e5e2e2;
+  background: var(--clr-light);
+  color: var(--clr-dark);
 
 }
 
@@ -41,6 +53,7 @@ header {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
+  
  
 }
 .header{
@@ -62,10 +75,23 @@ section{
 html{
   scroll-behavior: smooth;
 }
+h1{ font-size: var(--fs-h1);}
+h2{ 
+  font-size: var(--fs-h2);
+  font-weight: var(--fw-reg);
+}
+h3{ font-size: var(--fs-h3);}
+
+/*need to redo this part */
+:focus{
+outline: 3px solid var(--clr-accent);
+outline-offset: 3px;
+}
 .nav-bar{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding: 0;
    
 }
 .logo{
@@ -73,6 +99,7 @@ html{
     text-decoration: none;
     color: var(--clr-dark);
 }
+
 .nav-list{
   display: none;
 }
@@ -173,7 +200,22 @@ html{
  }
 
 }/*end at media*/
-
+.title{
+  font-weight: 400;
+  margin: auto ;
+  padding: auto;
+}
+.title:hover{
+  color: var(--clr-accent);
+}
+.title:hover::after{
+  content: '';
+  display: block;
+  position: relative;
+  background-color: var(--clr-accent);
+  width: 100%;
+  height: 2px;
+}
 .container{
   display: flex;
   flex-direction: column;
@@ -212,6 +254,7 @@ html{
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-column-gap: .5em;
 }
+
 /*end project */
 
 /*about */
@@ -227,25 +270,31 @@ html{
 .project-card,
 .about-card {
   padding: 1em;
-  border: 0.5px solid  #8f8f8f;
-  border-radius: 2%;
+  border: 0.5px solid  var(--clr-accent);
+  border-radius: 1%;
   margin: .2em;
   text-align: left;
-  background: #fff;
+  background: var(--clr-light);
+  font-family: inherit;
 }
-.intro-card{
-  border: 1px solid #61dafb;
+.intro-card:hover, .project-card:hover,.about-card:hover{
+  background-color: var(--clr-accent-light);
+  color: var(--clr-dark);
+  transition: transform 200ms ease-in-out;
+  transform: scale(1.1);
 }
-.project__link > a{
+.card__link, .project__link  > a{
   text-decoration: none;
   color: rgb(35, 35, 211);
   padding-right: .5em;
 }
+
 .project__img{
   object-fit: contain;
   max-height: 299px;
   width: 100%;
 }
+
 .social-list{
   display: flex;
   justify-content: center;

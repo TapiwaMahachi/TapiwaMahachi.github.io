@@ -12,7 +12,9 @@ export default function Footer() {
     
         return(
             <footer style={footerStyle} >
-                    <a href="mailto:mahachitapiwa13@gmail.com">
+                   
+                    <a href="mailto:mahachitapiwa13@gmail.com" 
+                    target="_blank" rel="noopener noreferrer">
                           mahachitapiwa13@gmail.com  
                         <i className="fas fa-envelope-square"></i>
                     </a>

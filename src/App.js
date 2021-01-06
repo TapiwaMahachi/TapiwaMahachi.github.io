@@ -38,7 +38,7 @@ function  App(props){
           <Intro />
         </section>
         <section className="projects" id="projects">
-          <h2 className="projects-title">PROJECTS</h2>
+          <h2 className="title">PROJECTS</h2>
           <h3 className="projects-subtitle">a selection of a range of projects</h3>
           <div className="projects-card">
             {projectList}
