@@ -250,9 +250,17 @@ outline-offset: 3px;
 .intro strong{
   display: block;
 }
+.home{
+  background-image: url('../src/img/intro_background.jpg');
+  padding-top: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
 
 @media(min-width: 600px){
-  .container{
+  .home{
     flex-direction: row;
   }
 }
@@ -281,14 +289,7 @@ outline-offset: 3px;
   transition: all ease-in-out 250ms;
   transform: scale(1.1);
 }
-.home{
-  background-image: url('../src/img/intro_background.jpg');
-  padding-top: 2em;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  
-}
+
 /*start project card*/
 .projects-card{
   display: grid;
