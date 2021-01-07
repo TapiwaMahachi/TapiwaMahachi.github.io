@@ -1,12 +1,14 @@
 import React from "react";
+import profile from '../img/me.png'
 
 export default function Intro(){
     return(
-        <div className="container">
+        <section className="home" id="home">
+           
             <div className="intro-card ">
-                <div className="intro">
-                    <img className="intro-img" src="./me.png" alt="profile pik"></img>
-                    <hr />
+               <div className="intro">
+                   <img className="intro-img" src={profile} alt="profile pik"></img>
+                   <hr />
                     <h3 className="intro-title">Hi I'm <strong>Tapiwa Mahachi</strong> </h3>
                     <p className="intro-subtitle">I enjoy working with others, coding , collabarating and research</p>
                 </div>
@@ -21,6 +23,7 @@ export default function Intro(){
                     <p>PS: Learning - Nodejs , MongoDb </p>
                 </div>
             </div>
-        </div>
+           
+        </section>
     );
 };

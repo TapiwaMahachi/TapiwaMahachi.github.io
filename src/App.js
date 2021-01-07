@@ -34,9 +34,7 @@ function  App(props){
       
       <ThemeContext.Provider value={{theme, setTheme}}>
         <Header />
-        <section>
-          <Intro />
-        </section>
+        <Intro />
         <section className="projects" id="projects">
           <h2 className="title">PROJECTS</h2>
           <h3 className="projects-subtitle">a selection of a range of projects</h3>

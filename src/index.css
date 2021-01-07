@@ -50,10 +50,9 @@ header {
   font-size: calc(5px + 2vmin);
   color: var(--clr-light);
   background-color: var(--clr-accent);
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
-  
+  z-index: 2;
  
 }
 .header{
@@ -75,6 +74,10 @@ section{
 html{
   scroll-behavior: smooth;
 }
+h1,h2,h3{
+  line-height: 1.1;
+}
+
 h1{ font-size: var(--fs-h1);}
 h2{ 
   font-size: var(--fs-h2);
@@ -97,7 +100,14 @@ outline-offset: 3px;
 .logo{
     margin: auto 1em;
     text-decoration: none;
-    color: var(--clr-dark);
+    color: var(--clr-light);
+    text-transform: uppercase;
+}
+.logo:hover{
+  color: var(--clr-dark);
+  border: 2px solid var(--clr-light);
+  padding: 4px;
+  border-radius: 5%;
 }
 
 .nav-list{
@@ -175,13 +185,13 @@ outline-offset: 3px;
   }
   
   .nav-link {
-  color: inherit;
-  text-decoration: none;
+    color: inherit;
+    text-decoration: none;
   }
   .nav-list{
-  display: flex;
-  list-style: none;
-  position: relative;
+    display: flex;
+    list-style: none;
+    position: relative;
  }
  .nav-list li{
    padding: 0 1em;
@@ -189,37 +199,47 @@ outline-offset: 3px;
  .nav-link:hover{
    color: var(--clr-dark);
  }
- .nav-link:hover::after{
+ .nav-link::after{
    content: '';
    display: block;
-   width: 100%;
+   width: 0%;
    height: 2px;
    background: var(--clr-dark);
    color: var(--clr-dark);
    position: relative;
+ 
+ }
+ .nav-link:hover::after{
+  width: 100%;
+  transition: all ease-in-out 250ms;
  }
 
 }/*end at media*/
 .title{
   font-weight: 400;
-  margin: auto ;
+  margin: auto 42% ;
   padding: auto;
+
+}
+.title_about{
+  margin: auto 44% 1em;
+  color: var(--clr-light);
+  
 }
 .title:hover{
   color: var(--clr-accent);
 }
-.title:hover::after{
+.title::after{
   content: '';
   display: block;
   position: relative;
   background-color: var(--clr-accent);
-  width: 100%;
+  width: 0%;
   height: 2px;
 }
-.container{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.title:hover::after{
+  width: 100%;
+  transition: all ease-in-out 250ms;
 }
 .intro-img{
   width: 199px;
@@ -239,32 +259,10 @@ outline-offset: 3px;
 .visually-hidden{
   display: none;
 }
-/*start project card*/
+
  i{
  font-size: 1.2em;
  padding-left: .25em;
-}
-
-.projects{
-  text-align: center;
-}
-
-.projects-card{
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-column-gap: .5em;
-}
-
-/*end project */
-
-/*about */
-.about{
-  text-align: center;
-}
-.about-cards{
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-column-gap: .5em;
 }
 .intro-card,
 .project-card,
@@ -272,7 +270,7 @@ outline-offset: 3px;
   padding: 1em;
   border: 0.5px solid  var(--clr-accent);
   border-radius: 1%;
-  margin: .2em;
+  margin: .5em;
   text-align: left;
   background: var(--clr-light);
   font-family: inherit;
@@ -280,19 +278,56 @@ outline-offset: 3px;
 .intro-card:hover, .project-card:hover,.about-card:hover{
   background-color: var(--clr-accent-light);
   color: var(--clr-dark);
-  transition: transform 200ms ease-in-out;
+  transition: all ease-in-out 250ms;
   transform: scale(1.1);
 }
-.card__link, .project__link  > a{
-  text-decoration: none;
-  color: rgb(35, 35, 211);
-  padding-right: .5em;
+.home{
+  background-image: url('../src/img/intro_background.jpg');
+  padding-top: 2em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  
+}
+/*start project card*/
+.projects-card{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-column-gap: .5em;
 }
 
+.projects{ 
+  background-image: url('../src/img/project_background.png');
+}
 .project__img{
   object-fit: contain;
   max-height: 299px;
   width: 100%;
+}
+
+/*end project */
+.about, .projects, .home{
+  text-align: center;
+  background-size: cover;
+  background-color: inherit;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-bottom: 2em;
+}
+/*about */
+.about{
+  background-image: url('../src/img/about_background.png');
+}
+.about-cards{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-column-gap: .5em;
+}
+
+.card__link, .project__link  > a{
+  text-decoration: none;
+  color: rgb(35, 161, 211);
+  padding-right: .5em;
 }
 
 .social-list{
