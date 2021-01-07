@@ -47,7 +47,7 @@ body {
 
 header {
   min-height: 10vh;
-  font-size: calc(5px + 2vmin);
+  font-size: var(--fs-body);
   color: var(--clr-light);
   background-color: var(--clr-accent);
   position: sticky;
@@ -69,7 +69,6 @@ img{
 }
 section{
   margin:0;
-
 }
 html{
   scroll-behavior: smooth;
@@ -85,11 +84,6 @@ h2{
 }
 h3{ font-size: var(--fs-h3);}
 
-/*need to redo this part */
-:focus{
-outline: 3px solid var(--clr-accent);
-outline-offset: 3px;
-}
 .nav-bar{
   display: flex;
   flex-direction: row;
@@ -109,41 +103,78 @@ outline-offset: 3px;
   padding: 4px;
   border-radius: 5%;
 }
-
+/*background of the nav bar and hidding it */
+.nav{
+  background-color: var(--clr-dark);
+  opacity: .85;
+  position: fixed;
+  padding-left: 8em;
+  top: 0;
+  left: 0;
+  bottom: 50%;
+  right: 0;
+  z-index: 100;
+  transform: translateX(100%);
+  transition: transform 250ms cubic-bezier(0, .5, .5, 1);
+}
+/*nav list */
 .nav-list{
-  display: none;
+  display: flex;
+  list-style: none;
+  flex-direction: column;
+  height: 100%;
+  align-items:flex-start;
+  justify-content: space-evenly;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+ 
 }
-
+/*button for the humburger */
 .nav-toggle{
+  padding: 1em .5em;
   background: transparent;
-  padding: 2em;
-  position: relative;
+  position: absolute;
   border: 0;
+  cursor: pointer;
+  top: 1em;
+  right: 1em;
+  z-index: 1000;
 }
+/*creating the humburger */
 .hamburger{
   position: relative; 
+  display: block;
 }
 
 .hamburger,
 .hamburger::before,
 .hamburger::after{
-  background: var(--clr-dark);
-  display: block;
-  width: 3em;
-  height: 2px;
+  background: var(--clr-light); 
+  width: 2.5em;
+  height: 3px;
+  border-radius: 1em;
+  transition: transform 250ms ease-in-out;
 }
+
 .hamburger::before,
 .hamburger::after{
   content: '';
   position: absolute;
+  left: 0;
+  right: 0;
 }
 .hamburger::before{top: 6px;}
 .hamburger::after{bottom: 6px;}
 
-/*animation of the hamburger with CSS */
-
+/*animation of the hamburger */
+.nav-open .nav{
+  transform: translateX(50%) translateY(0);
+  bottom: 50%;
+  
+}
 .nav-open .nav-toggle{
-  position: relative;
+  position: fixed;
 }
 
 .nav-open .hamburger{
@@ -156,56 +187,26 @@ outline-offset: 3px;
  .nav-open .hamburger::after{
    opacity: 0;
  }
+/* end animation of the humburger */
 
-@media (min-width: 600px){
-
-  .nav-toggle{
-    display: none;
-  }
-
-  .contact-btn{
-    display: block;
-    position: relative;
-    min-width: calc(150px + 2vmin);
-    min-height: calc(20px + 2vmin);
-    background: inherit;
-    border: 1px solid #61dafb;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    cursor: pointer;
-    color: #61dafb;
-    border-radius: 3%;
-    margin: 1em;
-    right: 1em;
-
-  }
-  .contact-btn:hover{
-    transform: scale(1.2);
-    transition: transform 3000ms ease-in-out;
-  }
-  
-  .nav-link {
-    color: inherit;
-    text-decoration: none;
-  }
-  .nav-list{
-    display: flex;
-    list-style: none;
-    position: relative;
- }
  .nav-list li{
    padding: 0 1em;
  }
+ /* nav link list */
+ .nav-link {
+    color: var(--clr-accent);
+    text-decoration: none;
+  }
  .nav-link:hover{
-   color: var(--clr-dark);
+   color: var(--clr-light);
  }
  .nav-link::after{
    content: '';
    display: block;
    width: 0%;
    height: 2px;
-   background: var(--clr-dark);
-   color: var(--clr-dark);
+   background: var(--clr-light);
+   color: var(--clr-light);
    position: relative;
  
  }
@@ -213,18 +214,24 @@ outline-offset: 3px;
   width: 100%;
   transition: all ease-in-out 250ms;
  }
+/*bigger screens */
+@media (min-width: 600px){
+  .nav-open .nav{
+  transform: translateX(0);
+}
+.nav-list{
+  align-items: center;
+  justify-content: space-evenly;
+}
+}
+/*end at media*/
 
-}/*end at media*/
 .title{
-  font-weight: 400;
-  margin: auto 42% ;
-  padding: auto;
-
+  position: relative;
+  font-weight: var(--fw-reg);
 }
 .title_about{
-  margin: auto 44% 1em;
-  color: var(--clr-light);
-  
+  color: var(--clr-light); 
 }
 .title:hover{
   color: var(--clr-accent);
@@ -234,11 +241,12 @@ outline-offset: 3px;
   display: block;
   position: relative;
   background-color: var(--clr-accent);
+  margin: .5em auto 1em;
   width: 0%;
   height: 2px;
 }
 .title:hover::after{
-  width: 100%;
+  width: 4em;
   transition: all ease-in-out 250ms;
 }
 .intro-img{
@@ -282,12 +290,13 @@ outline-offset: 3px;
   text-align: left;
   background: var(--clr-light);
   font-family: inherit;
+  opacity: 0.8;
 }
 .intro-card:hover, .project-card:hover,.about-card:hover{
-  background-color: var(--clr-accent-light);
+ /* background-color: var(--clr-accent-light);*/
   color: var(--clr-dark);
   transition: all ease-in-out 250ms;
-  transform: scale(1.1);
+  opacity: 1;
 }
 
 /*start project card*/
@@ -304,16 +313,17 @@ outline-offset: 3px;
   object-fit: contain;
   max-height: 299px;
   width: 100%;
+ 
 }
 
 /*end project */
 .about, .projects, .home{
   text-align: center;
   background-size: cover;
+  background-position: center center;
   background-color: inherit;
-  margin-bottom: 0;
-  margin-top: 0;
   padding-bottom: 2em;
+  opacity: 0.9;
 }
 /*about */
 .about{

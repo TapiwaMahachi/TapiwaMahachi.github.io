@@ -3,12 +3,33 @@ import React from 'react';
 
 function Header(){
 
+    const toggle =()=>{
+        const navToggle = document.querySelector('.nav-toggle');
+        const navList = document.querySelectorAll('.nav-link');
+
+        navToggle.addEventListener('click', () =>{
+            document.body.classList.toggle('nav-open');
+        });
+        navList.forEach(link =>{
+            link.addEventListener('click', ()=>{
+                document.body.classList.remove('nav-open');
+            });
+        });
+    };
+
     return(
             <header className="header" >
                 <a className="logo"href={"#home"}>
                 <span className="logo-btn">DevTapiwa</span>
                 </a>
-                <nav >
+                 <button  
+                    className="nav-toggle" 
+                    aria-label="toggle navigation" 
+                    onClick={toggle}
+                >
+                    <span  className="hamburger"></span>
+                </button>
+                <nav  className="nav">
                     <ul className="nav-list">
                         <li><a className="nav-link" href={"#home"}>Home</a></li>
                         <li><a className="nav-link" href={"#projects"}>Projects</a></li>
@@ -19,13 +40,7 @@ function Header(){
                         </li>
                     </ul>
                 </nav>          
-                <button  
-                    className="nav-toggle" 
-                    aria-label="toggle-navigation" 
-                    onClick={()=>{document.body.classList.toggle('nav-open') }}
-                >
-                <span  className="hamburger"></span>
-                </button>
+               
             </header>
         )
  };
