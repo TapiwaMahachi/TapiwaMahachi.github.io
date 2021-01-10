@@ -2,12 +2,13 @@ import React from "react";
 
 export default function About(){
     return(
-        <section className="about" id="about">
-            <h2 className="title title_about">ABOUT</h2>
+        <section className="about" id="about" >
+            <h2 className="title title_about" >ABOUT</h2>
             <div className="about-cards">
                
                 <div className="about-card">
                     <h3 className=" about-subtitle">Developer Based in Cape Town</h3>
+                    <hr/>
                     <div className="about-intro">
                         <p>
                             I’ve always sought out opportunities and challenges that are
@@ -26,7 +27,7 @@ export default function About(){
                 </div>
                 <div className="about-card">
                     <h3> How i learned</h3> 
-                    <hr></hr>
+                    <hr/>
                     <p> 
                         <strong>Self taught - </strong>
                         Reverse engeneering , cloning and breaking things apart trying to understand how and why it it works that way
@@ -41,8 +42,8 @@ export default function About(){
                                 </a>
                             </span>
                         </p>
-                        <p className="brown-text">Pretoria, GP</p>
-                        <ul>
+                        <p >Pretoria, GP</p>
+                        <ul >
                             <li>B.S.C in Computing</li>
                             <li>In progress</li>
                         </ul>
