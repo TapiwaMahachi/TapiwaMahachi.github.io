@@ -1,15 +1,18 @@
 import React from 'react';
 
 
+
 function Header(){
 
+   
+    //function to handle the humburger clicks
     const toggle =()=>{
-        const navToggle = document.querySelector('.nav-toggle');
         const navList = document.querySelectorAll('.nav-link');
 
-        navToggle.addEventListener('click', () =>{
-            document.body.classList.toggle('nav-open');
-        });
+        //adding a class of nav-open to the body of the document
+        document.body.classList.toggle('nav-open');
+        
+        //removing the added class from the body and closing the humburger
         navList.forEach(link =>{
             link.addEventListener('click', ()=>{
                 document.body.classList.remove('nav-open');

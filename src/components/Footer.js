@@ -2,18 +2,23 @@ import React from 'react';
 
 export default function Footer() {
 
-        const footerStyle = {   
+        const footer = {   
                 textAlign: "center",
                 background: "#3b8da3",
                 color: "#dad6d6",
-                padding: "1em",
+                padding: "0",
 
         }
-    
+        const copyright ={
+            backgroundColor: "rgba(39, 38, 38)",
+            marginBottom: "1em",
+            padding: '.5em',
+        }
+       
         return(
-            <footer style={footerStyle} >
-                   
-                    <a href="mailto:mahachitapiwa13@gmail.com" 
+            <footer style={footer} >
+                <div className="footer-social">
+                     <a href="mailto:mahachitapiwa13@gmail.com" 
                        target="_blank" rel="noopener noreferrer">
                           mahachitapiwa13@gmail.com  
                         <i className="fas fa-envelope-square"></i>
@@ -36,7 +41,10 @@ export default function Footer() {
                             </a>
                         </li>  
                     </ul>
-                    <p className="copyright">Copyright © {new Date().getFullYear()} DevTapiwa.</p>                  
+                </div>
+                <div className="footer-copyright" style={copyright}>
+                     <p className="copyright">Copyright © {new Date().getFullYear()} DevTapiwa.</p>
+                </div>                  
             </footer>
         );
  };
