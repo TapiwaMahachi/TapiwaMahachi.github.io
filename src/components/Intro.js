@@ -1,29 +1,28 @@
 import React from "react";
-import profile from '../img/me.png'
+import '../css/_intro.scss'
 
 export default function Intro(){
     return(
-        <section className="home" id="home">
-           
-            <div className="intro-card ">
-               <div className="intro">
-                   <img className="intro-img" src={profile} alt="profile pik"></img>
-                   <hr />
-                    <h3 className="intro-title">Hi I'm <strong>Tapiwa Mahachi</strong> </h3>
-                    <p className="intro-subtitle">I enjoy working with others, coding , collabarating and research</p>
-                </div>
+        <section className="intro">
+           <div className="intro__card">
+             <div className="intro__title">
+                   {/* <img className="intro-img" src={profile} alt="profile pik"></img> */}
+                   
+                    <h2>Hi I'm <strong>Tapiwa Mahachi</strong> </h2>
+                    <p>I enjoy working with others, coding , collabarating and research</p>
             </div>
-            <div className="intro-card ">
-                <div className="skills">
-                    <h3 className="skills-title"> What I Know</h3>
-                    <hr />
-                    <p><strong>Front-end</strong><br />React, MaterialUi, Javascript</p>
-                    <p><strong>Backend</strong><br />Python, Django,SQL,Firebase</p>
-                    <p><strong>Other</strong><br />Git & Github - version control,</p>
-                    <p>PS: Learning - Nodejs , MongoDb </p>
+            {/* <div className="intro__img"></div> */}
+            <div className="intro__skills">
+                <div className="info">
+                     <h2> What I Know</h2>
+                <p><strong>Front-end</strong><br />React, MaterialUi, Javascript</p>
+                <p><strong>Backend</strong><br />Python, Django,SQL,Firebase</p>
+                <p><strong>Other</strong><br />Git & Github - version control,</p>
+                <p>PS: Learning - Nodejs , MongoDb </p>
                 </div>
+               
             </div>
-           
+           </div>
         </section>
     );
 };

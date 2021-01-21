@@ -9,7 +9,7 @@ import About from "./components/About";
 import ThemeContext from "./ThemeContext";
 
 
-
+import './css/_style.scss'
 
 
 function  App(props){
