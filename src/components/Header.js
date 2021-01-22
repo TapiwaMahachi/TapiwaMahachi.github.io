@@ -21,31 +21,45 @@ function Header(){
     //         });
     //     });
     // };
+    
 
     const toggle =()=>{
         const header = document.querySelector('.header');
         const fadElement = document.querySelectorAll('.has-fade');
-        const body = document.querySelector('body')
+        const body = document.querySelector('body');
+        const mobile = document.querySelectorAll('.mobile-link');
+        
 
         if(header.classList.contains('nav-open')){
             body.classList.remove('noscroll');
             header.classList.remove('nav-open');
             fadElement.forEach(element => {
                 element.classList.remove('fade-in');
-                element.classList.add('fade-out')
+                element.classList.add('fade-out');
             });
         }else{
-            body.classList.add('noscroll')
-            header.classList.add('nav-open')
+            body.classList.add('noscroll');
+            header.classList.add('nav-open');
             fadElement.forEach(element=>{
                 element.classList.remove('fade-out')
                 element.classList.add('fade-in')
-            })
+            });
+            mobile.forEach(link =>{
+                link.addEventListener('click', ()=>{
+                    body.classList.remove('noscroll');
+                   header.classList.remove('nav-open');
+                    fadElement.forEach(element => {
+                        element.classList.remove('fade-in');
+                        element.classList.add('fade-out');
+                         });
+                    
+                });
+            });
         }
     }
 
     return(
-    <header className="header" >
+      <header className="header" id="home" >
         <div className="overlay has-fade"></div>
         <nav className="flex flex-jc-sb flex-ai-c">
             <a className="header__logo"href={"#home"}>
@@ -75,17 +89,17 @@ function Header(){
         </nav>
         {/* Menu that displays on mobile when you click the hamburger */}
          <div className="header__menu has-fade">
-                <a  href={"#home"}>Home</a>
-                <a  href={"#projects"}>Projects</a>
-                <a  href={"#about"}>About</a>
-                <a  href="https://my.indeed.com/p/tapiwam-g6lrjhh">
+                <a className='mobile-link' href={"#home"}>Home</a>
+                <a className='mobile-link' href={"#projects"}>Projects</a>
+                <a className='mobile-link' href={"#about"}>About</a>
+                <a className='mobile-link' href="https://my.indeed.com/p/tapiwam-g6lrjhh">
                     resume<i className="fas fa-file"/>
                 </a>
-            </div>
-              
+        </div>
         
-    </header>
-        )
+      </header>
+
+    )
  };
  
 export default Header;

@@ -137,9 +137,14 @@
         flex-direction: column;
         justify-content: space-evenly;
         border-radius: 2%;
+        font-size: $font-lg;
         a {
           color: var(--darkBlue);
           text-align: center;
+
+          &:hover{
+            color: $brightCyan;
+          }
         }
       }
 }
