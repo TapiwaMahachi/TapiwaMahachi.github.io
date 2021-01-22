@@ -36,9 +36,9 @@ function  App(props){
         <Header />
         <Intro />
         <section className="projects" id="projects">
-          <h2 className="title">PROJECTS</h2>
-          <h3 className="projects-subtitle">a selection of a range of projects</h3>
-          <div className="projects-card">
+          <h2 >PROJECTS</h2>
+          <h3 >a selection of a range of projects</h3>
+          <div className="card">
             {projectList}
           </div>
         </section>

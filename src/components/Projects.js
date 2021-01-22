@@ -1,18 +1,20 @@
 import React from "react"
 
+
 export default function Project(props){
 
     return(
-        <div className="project-card">
-            <h3 className="title__project">{props.title}</h3>
-            <img className="project__img" src={props.img} alt="project img" />
-            <hr />
-            <p>{props.description}</p>
-            <p>
+        <div className="project">
+            <h3>{props.title}</h3>
+            <img  src={props.img} alt="project img" />
+            <div>
+                <p>{props.description}</p>
+               <p>
                 <strong> Accomplishments </strong><br/>
                 {props.accomplishments}
-            </p>
-             
+               </p>
+            </div>
+         
             <p className="project__link">
                 <a href={props.link}>visit site
                 <i className="fas fa-external-link-alt"></i>
