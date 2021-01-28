@@ -1,0 +1,20 @@
+@import "variables";
+
+.about{
+    display: flex;
+    flex-direction: column !important;
+    align-items: center;
+    text-align: center;
+
+    &__title{
+        font-size:$font-xlg;
+        color: $darkBlue;
+    }
+    &__subtitle{
+        font-size: $font-lg;
+
+    }
+    
+
+    
+}

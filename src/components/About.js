@@ -1,15 +1,16 @@
 import React from "react";
+import '../css/_about.scss'
+import me from '../img/me.png'
 
 export default function About(){
     return(
         <section className="about" id="about" >
-            <h2 className="title title_about" >ABOUT</h2>
-            <div className="about-cards">
-               
-                <div className="about-card">
-                    <h3 className=" about-subtitle">Developer Based in Cape Town</h3>
-                    <hr/>
-                    <div className="about-intro">
+            <div><h1 className="about__title" >ABOUT</h1></div>
+            <div className="about__cards">
+                <div className="about__card">
+                    <h3 className=" about__subtitle">Developer Based in Cape Town</h3>
+                   <div className="about__img"><img src={me} alt="profile"/></div>
+                    <div className="about__intro">
                         <p>
                             I’ve always sought out opportunities and challenges that are
                             meaningful to me. Although my professional path has taken many
@@ -25,15 +26,15 @@ export default function About(){
                         
                     </div>
                 </div>
-                <div className="about-card">
-                    <h3> How i learned</h3> 
+                <div className="about__card">
+                    <h3 className="about__subtitle"> How i learned</h3> 
                     <hr/>
                     <p> 
                         <strong>Self taught - </strong>
                         Reverse engeneering , cloning and breaking things apart trying to understand how and why it it works that way
                     </p>
                     <div className="card__content">
-                        <p className="education-title "><strong>Education</strong></p>
+                        <p className="education__title "><strong>Education</strong></p>
                         <p>
                             <span className="card-title">
                                 <a  className="card__link" href="https://www.unisa.ac.za/sites/corporate/default">

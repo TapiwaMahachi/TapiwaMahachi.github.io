@@ -26,7 +26,8 @@ function  App(props){
     key={project.id}
     description={project.description}
     accomplishments={project.accomplishments}
-    link={project.link}
+    github={project.github}
+    url={project.url}
     />
     );
     
