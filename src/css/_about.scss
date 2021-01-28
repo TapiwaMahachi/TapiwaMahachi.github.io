@@ -5,14 +5,24 @@
     flex-direction: column !important;
     align-items: center;
     text-align: center;
+    background:  #e9f7fe;
+    color:#3d5b8a ;
 
     &__title{
         font-size:$font-xlg;
-        color: $darkBlue;
+        color: #3d5b8a;
+        line-height: 38px;
     }
     &__subtitle{
         font-size: $font-lg;
-
+        margin-bottom: .5em;
+        color:$red;
+    }
+    &__card{
+        margin:.5em;
+    }
+    a{
+       color:#3d5b8a ;  
     }
     
 

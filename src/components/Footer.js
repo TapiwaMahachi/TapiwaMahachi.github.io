@@ -1,23 +1,10 @@
 import React from 'react';
+import '../css/_footer.scss'
 
 export default function Footer() {
-
-        const footer = {   
-                textAlign: "center",
-                background: "#3b8da3",
-                color: "#dad6d6",
-                padding: "0",
-
-        }
-        const copyright ={
-            backgroundColor: "rgba(39, 38, 38)",
-            marginBottom: "1em",
-            padding: '.5em',
-        }
-       
         return(
-            <footer style={footer} >
-                <div className="footer-social">
+            <footer className="footer">
+                <div className="footer__social">
                      <a href="mailto:mahachitapiwa13@gmail.com" 
                        target="_blank" rel="noopener noreferrer">
                           mahachitapiwa13@gmail.com  
@@ -25,7 +12,7 @@ export default function Footer() {
                     </a>
                     <ul className="social-list">
                         <li>
-                            <a  className="social-link" href="https://github.com/TapiwaMahachi?tab=repositories"
+                            <a  className="social__link" href="https://github.com/TapiwaMahachi?tab=repositories"
                                 target="_blank" rel="noopener noreferrer"
                             >
                                 <span className="visually-hidden">Github</span>
@@ -33,7 +20,7 @@ export default function Footer() {
                             </a>
                         </li> 
                         <li>
-                            <a  className="social-link" href="https://linkedin.com/in/tapiwa-mahachi-398749131"
+                            <a  className="social__link" href="https://linkedin.com/in/tapiwa-mahachi-398749131"
                                 target="_blank" rel="noopener noreferrer"
                             >
                                 <span className="visually-hidden">LinkedIn</span>
@@ -42,7 +29,7 @@ export default function Footer() {
                         </li>  
                     </ul>
                 </div>
-                <div className="footer-copyright" style={copyright}>
+                <div className="footer__copyright">
                      <p className="copyright">Copyright © {new Date().getFullYear()} DevTapiwa.</p>
                 </div>                  
             </footer>

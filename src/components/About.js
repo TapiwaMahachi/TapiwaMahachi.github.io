@@ -7,9 +7,10 @@ export default function About(){
         <section className="about" id="about" >
             <div><h1 className="about__title" >ABOUT</h1></div>
             <div className="about__cards">
-                <div className="about__card">
+                
                     <h3 className=" about__subtitle">Developer Based in Cape Town</h3>
                    <div className="about__img"><img src={me} alt="profile"/></div>
+                   <div className="about__card">
                     <div className="about__intro">
                         <p>
                             I’ve always sought out opportunities and challenges that are
@@ -28,7 +29,6 @@ export default function About(){
                 </div>
                 <div className="about__card">
                     <h3 className="about__subtitle"> How i learned</h3> 
-                    <hr/>
                     <p> 
                         <strong>Self taught - </strong>
                         Reverse engeneering , cloning and breaking things apart trying to understand how and why it it works that way
