@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
 
 .projects{
-    background: $project;
+    background: $hero;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -11,14 +11,18 @@
     text-align: center;
     padding-top: 2rem;
     position: relative;
+    color: #333;
     
     h2{
         font-size: $font-xlg;
         font-weight: 400;
+        color: $red;
     }
     h3{
         font-size: $font-lg;
         font-weight: 400;
+        z-index: 2;
+        color: $white;
     }
     & > div{
         margin: 2rem; 
@@ -33,47 +37,51 @@
     }
     &::before{
         background: linear-gradient( to left bottom, $limeGreen,$brightCyan);
-        clip-path: circle(60% at right 100%);
+        clip-path: circle(60% at right 70%);
         right: 0;
         bottom: 0;
     }
     &::after{
         background: linear-gradient(to left bottom, $brightCyan, $limeGreen);
-        clip-path: circle(70% at left 70%);
+        clip-path: ellipse(130px 140px at 10% 20%);
         top: 0;
         left: 0;
     }
     .project{
         background: rgba(255,255,255,0.5 );
-        border: 1px solid $white;
-        box-shadow: 1px 2px rgba(255,255,255,0.5);
-        border-radius: 3%;
+        border: 1px solid $veryLightGray;
+        box-shadow: 2px 3px 1px rgba(255,255,255,0.3);
+        border-radius: 5px;
         padding: .5rem;
         z-index: 2;
         position: relative;
         transform-style: preserve-3d;
-        backdrop-filter: blur(25px);
+        backdrop-filter: blur(5px);
         width: 18.75rem;
-        height: 33rem;
+        height: 100%;
         margin: .5em;
-        color: #333;
+        color: $text;
+        display: block;
 
         &:not(:last-child){
             margin-bottom: 1rem;
         }
         img{
-          height: 299px; 
+          max-height: 90%; 
+          max-width: 35%;
           opacity: .5; 
+          margin: 0 auto;
           &:hover{
               opacity: 1;
+              transition: ease-in-out 250ms;
           }
         }
         p{
-            font-size: $font-med;
-            font-weight: 300;
-            text-align: left;
+            
+            font-weight: 200;
             padding: .5em;
-
+            display: block;
+            color: inherit;
         }
         div{
             padding: .4em;
@@ -85,7 +93,8 @@
                 color: $darkBlue;
 
                 &:hover{
-                    color: $brightCyan;
+                    color: $link;
+                    transition: ease-in-out 250ms;
                 }
                 &:not(:last-child){
                     margin-right: .5em;
@@ -94,7 +103,8 @@
         }
         &__title{
             margin-bottom: .5em;
-            
+            font-weight: 500;
+            color: inherit;
         }
     }
     .card{

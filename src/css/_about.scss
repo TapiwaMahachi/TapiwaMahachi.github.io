@@ -6,25 +6,44 @@
     align-items: center;
     text-align: center;
     background:  #e9f7fe;
-    color:#3d5b8a ;
+    color:$text;
+    padding-bottom: 2em;
 
     &__title{
         font-size:$font-xlg;
-        color: #3d5b8a;
+        color: $text;
         line-height: 38px;
     }
-    &__subtitle{
+    h3{
         font-size: $font-lg;
         margin-bottom: .5em;
         color:$red;
     }
+    &__intro{
+        text-align: left;
+    }
     &__card{
-        margin:.5em;
+        margin: 1em auto;
+        width: 80%;
     }
     a{
-       color:#3d5b8a ;  
+       color:$link;  
     }
-    
+    &__img{
+        max-width: 65%;
+        height: 100%;
+        margin: auto;
+
+        img{
+            border-radius: 5px;
+            max-width: 65%;
+            height: 100%;
+            margin: auto;
+            box-shadow: 1px 2px rgba(255,255,255, .5);
+            
+        }
+   
+    }
 
     
 }

@@ -94,7 +94,12 @@ h3 , p{
   font-size: var(--font-med);
   font-weight: var(--fw-reg);
 }
-
+li{
+  list-style: none;
+}
+.visually-hidden{
+  display: none;
+}
 //flex box 
 .flex{
   display: flex;

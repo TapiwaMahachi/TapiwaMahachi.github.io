@@ -8,7 +8,7 @@ export default function About(){
             <div><h1 className="about__title" >ABOUT</h1></div>
             <div className="about__cards">
                 
-                    <h3 className=" about__subtitle">Developer Based in Cape Town</h3>
+                   <h3 className=" about__subtitle">Developer Based in Cape Town</h3>
                    <div className="about__img"><img src={me} alt="profile"/></div>
                    <div className="about__card">
                     <div className="about__intro">
@@ -34,7 +34,7 @@ export default function About(){
                         Reverse engeneering , cloning and breaking things apart trying to understand how and why it it works that way
                     </p>
                     <div className="card__content">
-                        <p className="education__title "><strong>Education</strong></p>
+                        <h3 className="education__title "><strong>Education</strong></h3>
                         <p>
                             <span className="card-title">
                                 <a  className="card__link" href="https://www.unisa.ac.za/sites/corporate/default">

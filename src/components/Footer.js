@@ -10,7 +10,7 @@ export default function Footer() {
                           mahachitapiwa13@gmail.com  
                         <i className="fas fa-envelope-square"></i>
                     </a>
-                    <ul className="social-list">
+                    <ul className="social__list">
                         <li>
                             <a  className="social__link" href="https://github.com/TapiwaMahachi?tab=repositories"
                                 target="_blank" rel="noopener noreferrer"

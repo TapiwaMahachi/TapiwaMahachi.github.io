@@ -3,22 +3,39 @@
 .footer{
     background: $hero;
     display: block;
-    font-size: $font-lg;
-    font-weight: 300;
+    
     
      a{
-        color: #e9f7fe;    
+        color: $link; 
+        font-size: $font-med;
+        font-weight: 300;   
     }
     li{
         list-style: none;
     }
     &__social{
-        margin: 1em ;
+        margin: 0 ;
         text-align: center;
+        padding: 1em;
     }
     &__copyright{
         text-align: center;
-        margin-bottom: 1em;
+        padding-bottom: 1em;
+        font-size: $font-lg;
+        font-weight: 300;
+        color:  $lightGrayishBlue;
     }
-   
+    .social__list{
+        display: flex;
+        justify-content: center;
+        margin: 1em;
+        font-size: $font-lg;
+
+        li:not(:last-child){
+          margin-right: 1em;  
+        }
+        i{
+            font-size: $font-lg;
+        }
+    }
 }

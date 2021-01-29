@@ -1,22 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import afrex from './img/todo.PNG'
-import todo from './img/todo.PNG'
+import dev_img from './img/Desktop-App-Development-1.png'
 import App from './App';
 
 const PROJECTS = [
   {
     title: "E-commerce website",
-    img: afrex,
+    img: dev_img,
     id: "port",
     accomplishments: "E-commerce site build with React, MaterialUi, Firebase, Authentication, Stripe Payment",
     github: "https://github.com/TapiwaMahachi"
   },
   {
     title: "To-do Web App",
-    img: todo,
+    img: dev_img,
     id: "todo",
-    accomplishments: `Todo web-app built with React,HTML, SCSS/CSS, Javascript,firebase `,
+    accomplishments: `Todo web-app built with React,HTML,CSS, Javascript,firebase `,
     github: "https://github.com/TapiwaMahachi",
     url: 'https://tapiwamahachi.github.io/todo-webapp/',
   },
