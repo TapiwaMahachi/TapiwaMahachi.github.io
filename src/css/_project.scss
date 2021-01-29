@@ -9,14 +9,15 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding-top: 2rem;
+    padding-top:2em;
+    padding-bottom: 2em;
     position: relative;
-    color: #333;
-    
+  
     h2{
         font-size: $font-xlg;
         font-weight: 400;
         color: $red;
+        z-index: 2;
     }
     h3{
         font-size: $font-lg;
