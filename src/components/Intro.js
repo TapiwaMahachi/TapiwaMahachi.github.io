@@ -1,5 +1,7 @@
 import React from "react";
+import pp from "../img/Tapiwa.jpg";
 import '../css/_intro.scss'
+
 
 
 export default function Intro(){
@@ -49,26 +51,10 @@ export default function Intro(){
                     <div className="passion right">collaborating & research</div>
                 </div>
             </div>
-             {/* Code from codepen */}
-    
-        {/* <div className="intro__card">
-            <div className="intro__title">
-            
-                <h2>Hi I'm <strong>Tapiwa Mahachi</strong> </h2>
-                <p>I enjoy working with others, coding , collabarating and research</p>
-        </div>
-        
-        <div className="intro__skills">
-            <div className="info">
-                    <h2> What I Know</h2>
-            <p><strong>Front-end</strong><br />React, MaterialUi, Javascript</p>
-            <p><strong>Backend</strong><br />Python, Django,SQL,Firebase</p>
-            <p><strong>Other</strong><br />Git & Github - version control,</p>
-            <p>PS: Learning - Nodejs , MongoDb </p>
+            <div className="intro__img">
+                <img src={pp} alt="pp-img"/>
             </div>
-            
-        </div>
-        </div> */}
+         
         </section>
     );
 };

@@ -36,6 +36,17 @@
     .bold{
         font-weight: 400;
     }
+    &__img{
+        width: 65%;
+        margin: auto;
+        margin-bottom: 15em;
+        display: block;
+        img{
+            width: 65%;
+            margin: auto;
+            border-radius: 5px;
+        }
+    }
    #animation{
        div{
            position: absolute;
