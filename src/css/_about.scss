@@ -1,4 +1,5 @@
 @import "variables";
+@import "mixins";
 
 .about{
     display: flex;
@@ -7,7 +8,7 @@
     text-align: center;
     background:  #e9f7fe;
     color:$text;
-    padding-bottom: 2em;
+   
 
     &__title{
         font-size:$font-xlg;
@@ -43,6 +44,46 @@
             
         }
    
+    }
+  //large screens
+    @include breakpoint-up(large){
+        .about{
+            &__cards{
+                position: relative;
+                display: grid;
+                width: 80%;
+                grid-template-columns: 1fr 300px;
+                grid-template-areas: "title pp"
+                                    "sumr pp"
+                                    "educ pp";
+               
+            }
+            &__subtitle{
+                grid-area: title;
+            }
+            &__card.summary {
+                grid-area: sumr;
+                 margin: 0;
+             }
+            &__card:last-child{
+                grid-area: educ;
+                margin: 0;
+            }
+           &__img{
+                grid-area: pp;
+                margin: 0;
+                margin-left: -100px;
+                
+           
+            img{
+                
+                max-height: 100%;
+                max-width: 100%;;
+                
+            }
+        }
+            
+        }
     }
 
     

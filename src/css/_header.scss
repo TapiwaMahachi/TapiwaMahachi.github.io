@@ -4,8 +4,14 @@
   background-color: $white;
   min-height: 10vh;
   top: 0;
-  position: sticky;
+ 
   z-index: 1000;
+   &__logo{
+     img{
+       width: 150px;
+       height: 75px;
+     }
+   }
   
    nav{
      padding: 1.0625rem 1.5rem;
@@ -115,8 +121,8 @@
              
            
            &:hover{
-             color: linear-gradient(to right,var( --limeGreen), var(--brightCyan));
-
+              color: $link;
+             
              &::before{
               opacity: 1;
              }
@@ -143,7 +149,7 @@
           text-align: center;
 
           &:hover{
-            color: $brightCyan;
+            color: $link;
           }
         }
       }

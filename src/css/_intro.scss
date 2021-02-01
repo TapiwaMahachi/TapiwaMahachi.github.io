@@ -1,4 +1,5 @@
 @import "variables";
+@import "mixins";
 @import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
 
 
@@ -194,5 +195,35 @@
             }
         }
 }
-  
+ @include breakpoint-up(large){
+     .intro{
+        
+         &__main{
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          height: fit-content;
+          width: fit-content;
+
+           > div:first-child{
+              margin-right: .7em;
+              padding: .5em;
+          }
+        }
+     
+   
+    
+        &__img{
+            img{
+                width: 254px;
+                height: 454px;
+                object-fit: cover;
+                }
+            
+            }
+    
+    }
+ }
+    
 }
+

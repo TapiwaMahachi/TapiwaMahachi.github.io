@@ -1,27 +1,11 @@
 import React from 'react';
+import logo from '../img/portfolio-loggo.png'
 
 import '../css/_header.scss';
 
 
 
 function Header(){
-
-   
-    //function to handle the humburger clicks
-    // const toggle =()=>{
-    //     const navList = document.querySelectorAll('.nav-link');
-
-    //     //adding a class of nav-open to the body of the document
-    //     document.body.classList.toggle('nav-open');
-        
-    //     //removing the added class from the body and closing the humburger
-    //     navList.forEach(link =>{
-    //         link.addEventListener('click', ()=>{
-    //             document.body.classList.remove('nav-open');
-    //         });
-    //     });
-    // };
-    
 
     const toggle =()=>{
         const header = document.querySelector('.header');
@@ -63,12 +47,7 @@ function Header(){
         <div className="overlay has-fade"></div>
         <nav className="flex flex-jc-sb flex-ai-c">
             <a className="header__logo"href={"#home"}>
-                <svg height="50px" width="100px">
-                    <g>
-                        <rect className="rect" width="100px" height="50" fill=" white"></rect>
-                        <text x="10" y="35" height="45" fontSize="18" fill="hsl(233, 26%, 24%)">{`</>DevT`}</text>
-                    </g>  
-                </svg>
+               <img src={logo} alt="logo" />
             </a>
             <button 
                 className="header__nav-toggle hide-for-desktop" 

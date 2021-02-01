@@ -7,7 +7,9 @@ import '../css/_intro.scss'
 export default function Intro(){
     return(
         <section className="intro">
-            <div className= "intro__animation" id="animation">
+            <div className="intro__main">
+              <div className="intro__container">
+              <div className= "intro__animation" id="animation">
                 <div className="red slash">/</div>
                 <div className="white bold mask">
                     <div className="text text-1">Hi</div>
@@ -51,10 +53,13 @@ export default function Intro(){
                     <div className="passion right">collaborating & research</div>
                 </div>
             </div>
+            </div>
+            
             <div className="intro__img">
                 <img src={pp} alt="pp-img"/>
             </div>
-         
+            </div>
+            
         </section>
     );
 };
