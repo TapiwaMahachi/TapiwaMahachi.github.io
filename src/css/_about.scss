@@ -52,6 +52,8 @@
                 position: relative;
                 display: grid;
                 width: 80%;
+                margin: 1em auto;
+                margin-left: 12em;
                 grid-template-columns: 1fr 300px;
                 grid-template-areas: "title pp"
                                     "sumr pp"
@@ -76,10 +78,8 @@
                 
            
             img{
-                
                 max-height: 100%;
-                max-width: 100%;;
-                
+                max-width: 100%;;  
             }
         }
             

@@ -20,10 +20,11 @@
       opacity: 0;
       position: fixed;
       background-image: linear-gradient(var(--darkBlue), transparent);
-      top: 5rem;
+      top: 6rem;
       left: 0px;
       bottom: 0px;
       right: 0px;
+      z-index: 100;
   
     }
    
@@ -144,6 +145,7 @@
         justify-content: space-evenly;
         border-radius: 2%;
         font-size: $font-lg;
+        z-index: 100;
         a {
           color: var(--darkBlue);
           text-align: center;

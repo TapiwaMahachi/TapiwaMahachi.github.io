@@ -19,7 +19,7 @@ export default function About(){
                             and passion to help others and solve problems.
                         </p>
                         <p>
-                            As a developer, I enjoy using my attention to detail,
+                            As a developer student, I enjoy using my attention to detail,
                             my love for making things, and my mission-driven work
                             ethic. That's why I’m excited to make a big impact at a high growth company.
                         </p>
@@ -32,22 +32,6 @@ export default function About(){
                         <strong>Self taught - </strong>
                         Reverse engeneering , cloning and breaking things apart trying to understand how and why it it works that way
                     </p>
-                {/* <div className="card__content">
-                    <h3 className="education__title "><strong>Education</strong></h3>
-                    <p>
-                        <span className="card-title">
-                            <a  className="card__link" href="https://www.unisa.ac.za/sites/corporate/default">
-                                University of South Africa
-                            <i className="fas fa-university"></i>
-                            </a>
-                        </span>
-                    </p>
-                    <p >Pretoria, GP</p>
-                    <ul >
-                        <li>B.S.C in Computing</li>
-                        <li>In progress</li>
-                    </ul>
-                </div> */}
                 </div>
             </div>
        
