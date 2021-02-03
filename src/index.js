@@ -10,7 +10,7 @@ const PROJECTS = [
     id: "port",
     accomplishments: "E-commerce site built with React, MaterialUi, Firebase, Authentication, Stripe Payment",
     github: "https://github.com/TapiwaMahachi",
-    url: "https://github.com/TapiwaMahachi"
+    url: "https://afrex-6f4a8.web.app"
   },
   {
     title: "To-do Web App",
