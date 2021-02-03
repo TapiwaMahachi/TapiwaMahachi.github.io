@@ -8,8 +8,9 @@ const PROJECTS = [
     title: "E-commerce website",
     img: dev_img,
     id: "port",
-    accomplishments: "E-commerce site build with React, MaterialUi, Firebase, Authentication, Stripe Payment",
-    github: "https://github.com/TapiwaMahachi"
+    accomplishments: "E-commerce site built with React, MaterialUi, Firebase, Authentication, Stripe Payment",
+    github: "https://github.com/TapiwaMahachi",
+    url: "https://github.com/TapiwaMahachi"
   },
   {
     title: "To-do Web App",
