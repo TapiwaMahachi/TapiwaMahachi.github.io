@@ -4,7 +4,16 @@
     background: $hero;
     display: block;
     
-    
+     a:first-child{
+         display: flex;
+         flex-direction: row;
+         justify-content: center;
+         p{
+             margin-right: .5em;
+             font-size: $font-med;
+             font-weight: 300;
+         }
+     }
      a{
         color: $link; 
         font-size: $font-med;
@@ -36,6 +45,7 @@
         }
         i{
             font-size: $font-lg;
+            font-weight: 400;
         }
     }
 }

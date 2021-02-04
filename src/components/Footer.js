@@ -1,5 +1,7 @@
 import React from 'react';
-import '../css/_footer.scss'
+import '../css/_footer.scss';
+import github from '../img/icons8-github.svg';
+import linkdin from '../img/icons8-linkedin.svg';
 
 export default function Footer() {
         return(
@@ -7,8 +9,8 @@ export default function Footer() {
                 <div className="footer__social">
                      <a href="mailto:mahachitapiwa13@gmail.com" 
                        target="_blank" rel="noopener noreferrer">
-                          mahachitapiwa13@gmail.com  
-                        <i className="fas fa-envelope-square"></i>
+                         <p>mahachitapiwa13@gmail.com</p> 
+                         <i className="fas fa-envelope-square"></i>
                     </a>
                     <ul className="social__list">
                         <li>
@@ -16,7 +18,7 @@ export default function Footer() {
                                 target="_blank" rel="noopener noreferrer"
                             >
                                 <span className="visually-hidden">Github</span>
-                                <i className="fab fa-github"></i>
+                                <img src={github} alt="github"></img>
                             </a>
                         </li> 
                         <li>
@@ -24,7 +26,7 @@ export default function Footer() {
                                 target="_blank" rel="noopener noreferrer"
                             >
                                 <span className="visually-hidden">LinkedIn</span>
-                                <i className="fab fa-linkedin"></i>
+                                <img src={linkdin} alt="Linkedin"/>
                             </a>
                         </li>  
                     </ul>
