@@ -64,7 +64,8 @@ function Header(){
             <div className="header__logo">
                 <NavLink 
                     activeClassName="is-active"
-                    to="/home"   
+                    to="/"  
+                   exact
                 >
                 <img className="imge" src={logo} alt="logo" />
                 </NavLink>
@@ -87,7 +88,7 @@ function Header(){
                 <NavLink  
                     activeClassName="is-active"
                     to="/" 
-                    exact    
+                      exact 
                 >
                     <span>Home</span>
                 </NavLink>
@@ -97,7 +98,7 @@ function Header(){
                     <NavLink 
                         activeClassName="is-active"
                         to="/projects" 
-                        exact  
+                       exact
                   >
                      <span>Projects</span>
                  </NavLink>

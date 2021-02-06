@@ -14,14 +14,17 @@ function  App(props){
     return (
      <BrowserRouter>
         <Header />
-        <Switch>
+         <Switch>
           
           <Route exact path="/projects">
             <Projects project={props.projects}/>
           </Route>
-          <Route exact path="/" component={Intro} />
-        </Switch>
+          <Route  path="/" >
+            <Intro/>
+          </Route>
+         </Switch>
         <Footer />
+      
      </BrowserRouter>
     );
   
