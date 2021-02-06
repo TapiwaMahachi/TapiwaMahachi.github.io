@@ -23,7 +23,7 @@ function Projects(props) {
            <div className="circle left"></div>
           <div className="circle right"></div>
           <h2 >PROJECTS</h2>
-          <h3 >a selection of a range of projects</h3>
+          
           <div className="card">
             {projectList}
           </div>
