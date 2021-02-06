@@ -104,23 +104,14 @@ function Header(){
                  </NavLink>
                 </div>
                 
-                {/* <div className="link">
-                <NavLink
-                    activeClassName="is-active"
-                    to= "/about"
-                >
-                    <span>About</span>
-                </NavLink>
-            </div> */}
-                
                   <div className="link">
-                    <NavLink 
+                    <a
                         activeClassName="is-active"
-                        to="https://my.indeed.com/p/tapiwam-g6lrjhh"
+                        href="https://my.indeed.com/p/tapiwam-g6lrjhh"
                     >
                         <span>Resume</span>
                         <i className="fas fa-file"/>
-                    </NavLink>
+                    </a>
                 </div>
                 
             </div>
