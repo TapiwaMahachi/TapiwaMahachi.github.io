@@ -15,10 +15,11 @@ function  App(props){
      <BrowserRouter>
         <Header />
         <Switch>
-          <Route exact path="/" component={Intro} />
+          
           <Route exact path="/projects">
             <Projects project={props.projects}/>
           </Route>
+          <Route exact path="/" component={Intro} />
         </Switch>
         <Footer />
      </BrowserRouter>

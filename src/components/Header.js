@@ -64,7 +64,7 @@ function Header(){
             <div className="header__logo">
                 <NavLink 
                     activeClassName="is-active"
-                    to="/"    
+                    to="/home"   
                 >
                 <img className="imge" src={logo} alt="logo" />
                 </NavLink>
