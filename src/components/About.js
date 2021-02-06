@@ -1,6 +1,6 @@
 import React from "react";
 import '../css/_about.scss'
-import about from '../img/aboutbw.jpg'
+
 
 export default function About(){
     return(
@@ -8,7 +8,6 @@ export default function About(){
          <div><h1 className="about__title" >ABOUT</h1></div>
             <div className="about__cards">
             <h3 className=" about__subtitle">Developer Based in Cape Town</h3>
-                <div className="about__img"><img src={about} alt="profile"/></div>
                 <div className="about__card summary">
                     <div className="about__intro ">
                         <p>

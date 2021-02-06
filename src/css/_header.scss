@@ -1,8 +1,8 @@
 @import "variables";
 
 .header{
-  background-color: $white;
-  min-height: 10vh;
+  background: $white;
+  height: 75px;
   top: 0;
  
   z-index: 1000;
@@ -14,13 +14,13 @@
    }
   
    nav{
-     padding: 1.0625rem 1.5rem;
+     margin: .5em;
    }
    .overlay{
       opacity: 0;
       position: fixed;
-      background-image: linear-gradient(var(--darkBlue), transparent);
-      top: 6rem;
+      background-image: linear-gradient(#7a8699, transparent);
+      top: 5.2rem;
       left: 0px;
       bottom: 0px;
       right: 0px;
@@ -84,58 +84,96 @@
       }
       
        &__logo{
-        text-decoration: none;
-        color: var(--veryLightGray);
-        text-transform: uppercase;
+          border-radius: 5px;
+          width: 105px;
+          height: 65px;
+          border: 1px solid $darkBlue;
+
+        img{  
+          margin: auto;
+          width: 100px;
+          height: 60px;
+          
+          }
         
         &:hover{
-            color: var(--darkBlue);
+           border-color: $text;
            
         }
       }
-
-
+      
+      
 
       &__links{
+
          .link{
-           font-size: var(--font-med);
-           color: var(--grayishBlue);
+           width: 100px;
+           height: 60px;
+           justify-content: center;
+           display: flex;
+           align-items: center;
            transition: color 250ms ease-in-out;
            position: relative;
-
-           &:not(:last-child){
-             margin-right: 1.875rem ;
+            
+           i{
+             color: $darkBlue;
+             margin-left: .2em;
            }
+
+           span{
+            position: relative;
+            font-size: $font-lg;
+            color: $darkBlue;
+            font-weight: 700;
+     
             &::before{
               content: '';
               display: block;
               position: absolute;
               width: 100%;
               height: 4px;
-              background: linear-gradient(to right,var( --limeGreen), var(--brightCyan));
+              background: $darkBlue;
               left: 0;
               right: 0;
+              bottom: -10px;
               opacity: 0;
               transition: opacity 250ms ease-in-out;
-              bottom: 50px;
              }
              
            
-           &:hover{
-              color: $link;
+             &:hover{
+              color: $text;
              
              &::before{
               opacity: 1;
              }
+             }
            }
-         }
+           .is-active{
 
+             span{
+                color: $red;
+
+                &::before{
+                  opacity: 1;
+                  background: $red;
+                }
+             }
+              
+          }
+
+           &:not(:last-child){
+             margin-right: 1.875rem ;
+           }
          
+         }
+        
       }
       &__menu{
         position: absolute;
-        background: var(--veryLightGray);
+        background: $white;
         height: 50vh;
+        top: 85px;
         text-align: center;
         width: calc(100% - 3rem);
         left: 50%;
@@ -143,8 +181,9 @@
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-        border-radius: 2%;
+        border-radius: 5px;
         font-size: $font-lg;
+        font-weight: 600;
         z-index: 100;
         a {
           color: var(--darkBlue);
@@ -155,4 +194,5 @@
           }
         }
       }
+      
 }

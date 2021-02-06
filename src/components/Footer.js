@@ -1,6 +1,6 @@
 import React from 'react';
 import '../css/_footer.scss';
-import github from '../img/icons8-github.svg';
+import github from '../img/github.svg';
 import linkdin from '../img/icons8-linkedin.svg';
 
 export default function Footer() {
@@ -32,7 +32,7 @@ export default function Footer() {
                     </ul>
                 </div>
                 <div className="footer__copyright">
-                     <p className="copyright">Copyright © {new Date().getFullYear()} DevTapiwa.</p>
+                     <p className="copyright">Copyright © {new Date().getFullYear()} DevT.</p>
                 </div>                  
             </footer>
         );

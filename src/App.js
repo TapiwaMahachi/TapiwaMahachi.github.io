@@ -1,34 +1,27 @@
-import React, { useState }  from "react"
-
-//import Footer from './components/Footer';
+import React from "react"
+import {BrowserRouter, Route, Switch} from 'react-router-dom';
 import Header from './components/Header';
 import Projects from "./components/Projects";
 import Footer from "./components/Footer";
 import Intro from "./components/Intro";
 import About from "./components/About";
-import ThemeContext from "./ThemeContext";
-
 
 import './css/_style.scss'
 
 
 function  App(props){
 
-  //hook for our theme
-  const [theme, setTheme] = useState('light');
-  
- 
-    
     return (
-      
-      <ThemeContext.Provider value={{theme, setTheme}}>
+     <BrowserRouter>
         <Header />
-        <Intro />
-        <Projects project ={props.projects} />
-        <About />
+        <Switch>
+          <Route exact path="/" component={Intro} />
+          <Route exact path="/projects">
+            <Projects project={props.projects}/>
+          </Route>
+        </Switch>
         <Footer />
-      </ThemeContext.Provider>
-   
+     </BrowserRouter>
     );
   
 }

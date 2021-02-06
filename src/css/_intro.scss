@@ -4,7 +4,12 @@
 
 
 .intro{
-    background: $hero;
+    background:  linear-gradient(to right, rgba(#091521, 0.9),
+    rgba(#7a8699, 0.5)) , url('../img/me-full.jpg') ;
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-clip: padding-box;
     position: relative;
     overflow: hidden;
     text-transform: uppercase;
@@ -45,11 +50,13 @@
         font-weight: 400;
     }
     &__img{
+        visibility: hidden;
         width: 65%;
         margin: auto;
         margin-bottom: 15em;
         display: block;
         img{
+            visibility: hidden;
             width: 65%;
             margin: auto;
             border-radius: 5px;
@@ -201,36 +208,6 @@
             animation-name: animation-5-text-title;
             }
         }
-}
- @include breakpoint-up(large){
-     .intro{
-        
-         &__main{
-          display: flex;
-          flex-direction: row;
-          justify-content: center;
-          height: fit-content;
-          width: fit-content;
-
-           > div:first-child{
-              margin-right: .7em;
-              padding: .5em;
-          }
-        }
-     
-   
-    
-        &__img{
-            img{
-                width: 254px;
-                height: 454px;
-                object-fit: cover;
-                }
-            
-            }
-    
     }
- }
-    
-}
 
+}

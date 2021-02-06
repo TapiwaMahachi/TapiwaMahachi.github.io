@@ -6,7 +6,6 @@
     background: $hero;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -16,7 +15,7 @@
   
     h2{
         font-size: $font-xlg;
-        font-weight: 400;
+        font-weight: 600;
         color: $red;
         z-index: 2;
     }
@@ -58,9 +57,9 @@
         transform-style: preserve-3d;
         backdrop-filter: blur(5px);
         width: 18.75rem;
-        height: 100%;
+        height: fit-content;
         margin: .5em;
-        color: $text;
+        color: $darkBlue;
         display: block;
 
         &:not(:last-child){
@@ -93,7 +92,7 @@
                 color: $darkBlue;
 
                 &:hover{
-                    color: $link;
+                    color: $text;
                     transition: ease-in-out 250ms;
                 }
                 &:not(:last-child){
