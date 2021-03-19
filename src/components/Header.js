@@ -124,7 +124,7 @@ function Header(){
                 <NavLink className='mobile-link' to="/projects">Projects</NavLink>
             {/* <NavLink className='mobile-link' to="/about">About</NavLink> */}
                 <NavLink className='mobile-link' to="https://docs.google.com/document/d/1iBwI4stWHVnOLgQYVa8Agc0hyT8fh2llDRyiOhHAPrI/edit?usp=sharing">
-                    resume<i className="fas fa-file"/>
+                    Resume<i className="fas fa-file"/>
                 </NavLink>
         </div>
         
