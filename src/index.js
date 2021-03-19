@@ -16,7 +16,7 @@ const PROJECTS = [
     title: "Admin Dashboard",
     img: dev_img,
     id: "admin",
-    accomplishments: `Stop managenent admin dashboard for creating and managing stock, users and suppliers`,
+    accomplishments: `Stock management admin dashboard - ExpressJs, MongoDb, React, JavaScript `,
     github: "https://github.com/TapiwaMahachi",
     url: 'https://pure-basin-41999.herokuapp.com/',
   },
