@@ -13,12 +13,12 @@ const PROJECTS = [
     url: "https://afrex-6f4a8.web.app"
   },
   {
-    title: "To-do Web App",
+    title: "Admin Dashboard",
     img: dev_img,
-    id: "todo",
-    accomplishments: `Todo web-app built with React,HTML,CSS, Javascript,firebase `,
+    id: "admin",
+    accomplishments: `Stop managenent admin dashboard for creating and managing stock, users and suppliers`,
     github: "https://github.com/TapiwaMahachi",
-    url: 'https://tapiwamahachi.github.io/todo-webapp/',
+    url: 'https://pure-basin-41999.herokuapp.com/',
   },
 ];
 

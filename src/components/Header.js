@@ -107,7 +107,7 @@ function Header(){
                   <div className="link">
                     <a
                         activeClassName="is-active"
-                        href="https://my.indeed.com/p/tapiwam-g6lrjhh"
+                        href="https://docs.google.com/document/d/1iBwI4stWHVnOLgQYVa8Agc0hyT8fh2llDRyiOhHAPrI/edit?usp=sharing"
                     >
                         <span>Resume</span>
                         <i className="fas fa-file"/>
@@ -123,7 +123,7 @@ function Header(){
                 <NavLink className='mobile-link' to="/" >Home</NavLink>
                 <NavLink className='mobile-link' to="/projects">Projects</NavLink>
             {/* <NavLink className='mobile-link' to="/about">About</NavLink> */}
-                <NavLink className='mobile-link' to="https://my.indeed.com/p/tapiwam-g6lrjhh">
+                <NavLink className='mobile-link' to="https://docs.google.com/document/d/1iBwI4stWHVnOLgQYVa8Agc0hyT8fh2llDRyiOhHAPrI/edit?usp=sharing">
                     resume<i className="fas fa-file"/>
                 </NavLink>
         </div>

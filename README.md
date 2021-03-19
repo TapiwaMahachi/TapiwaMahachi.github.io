@@ -1,11 +1,13 @@
 
-#Portfolio Website - Hosted on github pages
+### Portfolio Website 
 
-#Stack used
+- Hosted on github pages [tapiwa mahachi](https://tapiwamahachi.github.io/portfolio/)
 
-##React ,Javascript , HTML,  SCSS
+### Languages
 
-#Hero section
+- React ,Javascript , HTML,  SCSS
 
-##animation idea courtesy of codepen animation called lower thirds
+### Hero section
+
+- animation idea courtesy of codepen animation called lower thirds
 
