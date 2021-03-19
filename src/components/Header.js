@@ -108,6 +108,8 @@ function Header(){
                     <a
                         activeClassName="is-active"
                         href="https://docs.google.com/document/d/1iBwI4stWHVnOLgQYVa8Agc0hyT8fh2llDRyiOhHAPrI/edit?usp=sharing"
+                        target="_blank"
+                        rel="noopener noreferrer"
                     >
                         <span>Resume</span>
                         <i className="fas fa-file"/>
@@ -123,7 +125,12 @@ function Header(){
                 <NavLink className='mobile-link' to="/" >Home</NavLink>
                 <NavLink className='mobile-link' to="/projects">Projects</NavLink>
             {/* <NavLink className='mobile-link' to="/about">About</NavLink> */}
-                <NavLink className='mobile-link' to="https://docs.google.com/document/d/1iBwI4stWHVnOLgQYVa8Agc0hyT8fh2llDRyiOhHAPrI/edit?usp=sharing">
+                <NavLink 
+                    className='mobile-link' 
+                    to="https://docs.google.com/document/d/1iBwI4stWHVnOLgQYVa8Agc0hyT8fh2llDRyiOhHAPrI/edit?usp=sharing"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
                     Resume<i className="fas fa-file"/>
                 </NavLink>
         </div>
